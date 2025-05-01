@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>W3.CSS Template</title>
+<title>Quantitative Omics</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -19,8 +19,13 @@ body, html {
 .bgimg-1 {
   background-position: center;
   background-size: cover;
-  background-image: url("https://www.w3schools.com/w3images/mac.jpg");
+  background-image: url("images/LERW_1e3_seed=1234_dark.png");
   min-height: 100%;
+}
+
+.overlay-text {
+  text-shadow: 2px 2px 5px rgb(0, 0, 0); /* X offset, Y offset, blur radius, color */
+  transform: translate(-50%, -50%);
 }
 
 .w3-bar .w3-button {
@@ -61,11 +66,11 @@ body, html {
 </nav>
 
 <!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-left w3-text-white" style="padding:48px">
-    <span class="w3-jumbo w3-hide-small">Quantitative Omics Research</span><br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Quantitative Omics Research</span><br>
-    <span class="w3-large">Building analytic tools for biological data</span>
+<header class="bgimg-1 w3-display-container" id="home">
+  <div class="w3-display-topleft w3-text-white" style="padding:48px"><br>
+    <span class="w3-jumbo w3-hide-small overlay-text">Quantitative Omics Research</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium overlay-text">Quantitative Omics Research</span><br>
+    <span class="w3-large overlay-text">Building analytic tools for biological data</span>
     <p><a href="#work" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">About our projects</a></p>
   </div> 
   <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
